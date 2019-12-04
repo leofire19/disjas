@@ -2,12 +2,33 @@
   <div class="dashboard">
     <div class="auth-wallpaper col-12">
       <div class="oblique"></div>
+      <div class="oblique2"></div>
       <div class="auth-wallpaper__logo">
-        <div class="title"> VUE DASHBOARD </div>
-        <div class="desc"> build powerful dashboards in no time. </div>
+        <div class="title"> Visualisasi Data Interaktif </div>
+        <div class="desc"> Ekspor Indonesia</div>
+        <div class="credit"> Created by Gondes</div>
+      </div>
+      <div class = 'particle'>
+      <vue-particles
+        color="#dedede"
+        :particleOpacity="0.7"
+        :particlesNumber="50"
+        shapeType="circle"
+        :particleSize="4"
+        linesColor="#dedede"
+        :linesWidth="1"
+        :lineLinked="true"
+        :lineOpacity="0.4"
+        :linesDistance="150"
+        :moveSpeed="3"
+        :hoverEffect="true"
+        hoverMode="grab"
+        :clickEffect="true"
+        clickMode="push"
+      >
+      </vue-particles>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -15,21 +36,7 @@
 
 export default {
   name: 'dashboard',
-
-  methods: {
-    launchEpicmaxToast () {
-      this.showToast(`Let's work together!`, {
-        icon: 'fa-star-o',
-        position: 'top-right',
-        duration: Infinity,
-        action: {
-          text: 'Hire us',
-          href: 'http://epicmax.co/#/contact',
-          class: 'vuestic-toasted-link'
-        }
-      })
-    }
-  }
+  methods: {}
 }
 
 </script>
@@ -56,7 +63,13 @@ export default {
           color: $vue-blue;
         }
         .desc {
-          font-size: 18px;
+          font-size: 32px;
+          color: $light-gray;
+        }
+        .credit{
+          position: absolute;
+          bottom: 10px;
+          font-size: 28px;
           color: $light-gray;
         }
       }
@@ -68,6 +81,22 @@ export default {
         width: 15%;
         height: 115vh;
       }
+      .oblique2 {
+        position: absolute;
+        background-color: $auth-wallpaper-oblique-line;
+        left: calc(50% - 15%/2);
+        transform: rotate(-15deg);
+        width: 15%;
+        height: 115vh;
+      }
+      .particle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+  }
+
     }
   }
 

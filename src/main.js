@@ -12,9 +12,13 @@ import router from './router'
 import VuesticPlugin from '@/vuestic-theme/vuestic-plugin'
 import './i18n'
 import YmapPlugin from 'vue-yandex-maps'
+import VueTyperPlugin from 'vue-typer'
+import VueParticles from 'vue-particles'
 
 Vue.use(VuesticPlugin)
 Vue.use(YmapPlugin)
+Vue.use(VueParticles)
+Vue.use(VueTyperPlugin)
 
 // NOTE: workaround for VeeValidate + vuetable-2
 Vue.use(VeeValidate, { fieldsBagName: 'formFields' })
