@@ -44,7 +44,8 @@ export default {
   },
   data () {
     return {
-      apiUrl: 'https://vuetable.ratiw.net/api/users',
+      // apiUrl: 'https://vuetable.ratiw.net/api/users',
+      apiUrl: 'https://ca744b97.ngrok.io/api/get',
       apiMode: true,
       tableFields: FieldsDef.tableFields,
       itemsPerPage: ItemsPerPageDef.itemsPerPage,

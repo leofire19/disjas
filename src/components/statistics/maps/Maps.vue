@@ -1,12 +1,9 @@
 <template>
   <div class="dashboard">
     <div class="auth-wallpaper col-12">
-      <div class="oblique"></div>
-      <div class="oblique2"></div>
       <div class="auth-wallpaper__logo">
         <div class="title"> Visualisasi Data Interaktif </div>
         <div class="desc"> Ekspor Indonesia</div>
-        <div class="credit"> Created by Gondes</div>
       </div>
       <div class = 'particle'>
       <vue-particles
@@ -33,13 +30,11 @@
 </template>
 
 <script>
-
 export default {
-  name: 'dashboard',
-  methods: {}
+  name: 'maps'
 }
-
 </script>
+
 <style lang="scss" scoped>
   .dashboard {
     height: calc(100vh - #{$top-nav-height});
@@ -95,7 +90,7 @@ export default {
         left: 0;
         width: 100%;
         height: 100%;
-      }
+  }
 
     }
   }

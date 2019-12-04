@@ -7,24 +7,49 @@ export default {
       width: '4%'
     },
     {
-      name: 'name',
-      sortField: 'name',
-      width: '24%'
+      name: 'kelompok',
+      title: 'kelompok',
+      width: '12%'
     },
     {
-      name: 'email',
-      sortField: 'email',
-      width: '24%'
+      name: 'regional_tujuan',
+      title: 'Tahun',
+      width: '12%'
     },
     {
-      name: 'address.line2',
-      title: 'city',
-      width: '24%'
+      name: 'negara_tujuan',
+      title: 'Negara Tujuan',
+      width: '12%'
     },
     {
-      name: 'salary',
-      title: 'score',
-      width: '24%'
+      name: 'provinsi_asal',
+      title: 'Provinsi Asal',
+      width: '12%'
+    },
+    {
+      name: 'tahun',
+      title: 'Tahun',
+      width: '12%'
+    },
+    {
+      name: 'bulan',
+      title: 'Bulan',
+      width: '12%'
+    },
+    {
+      name: 'hs-2',
+      title: 'Kode HS-2',
+      width: '12%'
+    },
+    {
+      name: 'berat_bersih',
+      title: 'Berat Bersih',
+      width: '12%'
+    },
+    {
+      name: 'nilai',
+      title: 'Nilai',
+      width: '12%'
     }
   ],
   sortFunctions: {
