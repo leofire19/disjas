@@ -1,15 +1,22 @@
 <template>
-  <main>
-    <Chart />
-  </main>
+  <div id="app" class="app">
+    <router-view/>
+  </div>
 </template>
 
 <script>
-  import Chart from './components/Chart.vue';
-  export default {
-    name: 'app',
-    components: {
-      Chart,
-    },
-  };
+export default {
+  name: 'app'
+}
 </script>
+
+<style lang="scss">
+  @import "sass/main";
+
+  body {
+    height: 100%;
+    #app {
+      height: 100%;
+    }
+  }
+</style>
